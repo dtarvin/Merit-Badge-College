@@ -201,3 +201,172 @@ h1 {
 .nav--search-box {
     border: 0;
 }
+
+/*
+    Modification of code from codepen.io
+    Name: Event program using CSS Grid
+    Creator: Liquid Light
+    Link: https://codepen.io/liquidlight/pen/KjvgMQ
+*/
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.scheduleContainer {
+    display: grid;
+    column-gap: 0.2rem;
+    grid-template-columns: 5rem repeat(3, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas: 
+        "room-header period-1-header period-2-header period-3-header"
+        "hr101 stage stage stage"
+        "hr102 stage stage stage"
+        "hr103 stage stage stage"
+        "hr104 stage stage stage"
+        "hr105 stage stage stage"
+        "hr106 stage stage stage"
+        "hr107 stage stage stage"
+        "hr108 stage stage stage"
+        "hr109 stage stage stage"
+        "hr110 stage stage stage"
+        "hr111 stage stage stage"
+        "hr112 stage stage stage"
+        "hr113 stage stage stage"
+        "hr114 stage stage stage"
+    ;
+}
+
+.room {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: thin dotted #ccc;
+    height: 100%;
+    padding: 0 0.5rem;
+}
+
+.room-header,
+.period-1-header,
+.period-2-header,
+.period-3-header {
+    text-align: center;
+    align-self: flex-end;
+    color: white;
+    background-color: #003366;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.room-header {
+    grid-area: room-header;
+}
+
+.period-1-header {
+    grid-area: period-1-header;
+}
+
+.period-2-header {
+    grid-area: period-2-header;
+}
+
+.period-3-header {
+    grid-area: period-3-header;
+}
+
+.room.hr101 {
+    grid-area: hr101;
+}
+
+.room.hr102 {
+    grid-area: hr102;
+}
+
+.room.hr103 {
+    grid-area: hr103;
+}
+
+.room.hr104 {
+    grid-area: hr104;
+}
+
+.room.hr105 {
+    grid-area: hr105;
+}
+
+.room.hr106 {
+    grid-area: hr106;
+}
+
+.room.hr107 {
+    grid-area: hr107;
+}
+
+.room.hr108 {
+    grid-area: hr108;
+}
+
+.room.hr109 {
+    grid-area: hr109;
+}
+
+.room.hr110 {
+    grid-area: hr110;
+}
+
+.room.hr111 {
+    grid-area: hr111;
+}
+
+.room.hr112 {
+    grid-area: hr112;
+}
+
+.room.hr113 {
+    grid-area: hr113;
+}
+
+.room.hr114 {
+    grid-area: hr114;
+}
+
+.period {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    /* border-radius: 0.2rem; */
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.period.period-1 {
+    background-color: #d6cebd;
+}
+
+.period.period-2 {
+    background-color: #9ab3d5;
+}
+
+.period.period-3 {
+    background-color: #e9e9e4;
+}
+
+.period.hr101 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.period.hr114 {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+/*
+    End of modified code from Liquid Light
+*/
