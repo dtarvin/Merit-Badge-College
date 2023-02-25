@@ -94,7 +94,7 @@ main {
 .mb-blocks {
     padding: 25px;
     background-color: white;
-    z-index: 2;
+    z-index: 0;
 }
 
 .badges--page-title {
@@ -201,6 +201,89 @@ h1 {
 .nav--search-box {
     border: 0;
 }
+
+/* Code for Responsive NavBar*/
+
+.container {
+    /*   border: 2px solid red; */
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .titles {
+    /*   border: 2px solid green; */
+  }
+  
+  header {
+    background-color: #05004e;
+    padding: 0.8em 0;
+    box-shadow: 2px 2px 10px #f1f6f9;
+  }
+  
+  /* navbar */
+  
+  nav ul {
+    /*   border: 2px solid yellow; */
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 2em;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  nav a:hover,
+  nav a:focus {
+    color: #fd5f00;
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container-nav {
+      flex-direction: column;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar--right-side {
+        display: flex;
+        flex-direction: column;
+        background-color: #05004e;
+    }
+    
+    .main--grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .badges--page-title {
+        display: none;
+    }
+    .nav--search-box {
+        display: none;
+    }
+    .nav--search-button {
+        display: none;
+    }
+
+  }
+
+    /* End of Responsive NavBar */
 
 /*
     Modification of code from codepen.io
@@ -340,7 +423,7 @@ h1 {
     flex-direction: column;
     padding: 0.5rem 1rem;
     background-color: orange;
-    /* border-radius: 0.2rem; */
+    border-radius: 0.2rem;
     font-size: 0.8rem;
     font-weight: bold;
     line-height: 1.4;
