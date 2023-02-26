@@ -27,7 +27,7 @@ h1 {
 }
 nav {
     position: fixed;
-    top: 3.5em;
+    top: 1em;
     right: 0;
     width: 100%;
     display: flex;

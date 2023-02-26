@@ -48,9 +48,10 @@ body {
 }
 
 .site-titles--headings > h5 {
-    font-size: .5rem;
+    font-size: .6rem;
+    margin-top: -2em;
 }
 
 .site-titles--headings > h6 {
-    font-size: .4rem;
+    font-size: .5rem;
 }
